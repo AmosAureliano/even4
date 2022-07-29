@@ -6,7 +6,7 @@ export default function Home() {
 
     const EVENT_DATA = [
         {
-            title: 'Como aumentar a produtividade da empresa sem cansar os colaboradores',
+            title: 'Como aumentar a produtividade da empresa',
             date: '07/08/2022',
             typeEvent: 'Empresarial'
         },
