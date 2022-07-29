@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route ,Link, Routes} from "react-router-dom";
 import Home from "../pages/home";
+import MyEvents from "../pages/myEvents";
 import Login from "../pages/login";
 import Register from "../pages/register";
 import Event from "../pages/event";
@@ -13,6 +14,7 @@ export default function RouteLinks() {
                 <Route path="/register" element={<Register/>} />
                 <Route path="/home" element={<Home/>} />
                 <Route path="/event" element={<Event/>} />
+                <Route path="/my-events" element={<MyEvents/>} />
                 <Route path="/profile" element={<Profile/>} />
             </Routes>
         </Router>

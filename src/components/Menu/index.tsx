@@ -26,7 +26,7 @@ function Menu() {
             </ItemLink>
           </li>
           <li>
-            <ItemLink onClick={handleClick} to="/about">
+            <ItemLink onClick={handleClick} to="/my-events">
               Meus eventos
             </ItemLink>
           </li>
