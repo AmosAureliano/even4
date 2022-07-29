@@ -45,7 +45,7 @@ export const Button = styled.button`
     color: #FFFFFF;
     font-weight: bold;
     font-size: 1rem;
-    width: 100%;
+    width: 30%;
     margin: .5rem 0;
     cursor: pointer;
     transition: .3s;
