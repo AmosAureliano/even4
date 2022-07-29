@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { 
     EventHomeContainer,
     GeneralInformations,
@@ -21,7 +22,7 @@ export default function EventHome({title, typeEvent, date}  : EventHomeProps) {
                 <EventInfoText>{date}</EventInfoText>
             </GeneralInformations>
             
-            <Button>Comprar ingresso</Button>
+            <Link to="/event"><Button>Comprar ingresso</Button></Link>
         </EventHomeContainer>
     )
 }
