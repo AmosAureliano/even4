@@ -22,11 +22,10 @@ export default function Login() {
                     <TitleLogin>Entre e vá a um evento :)!</TitleLogin>
                     <Input type="email" placeholder="Email"/>
                     <Input type="password" placeholder="Senha"/>
-                    <Button>Acessar</Button>
+                    <Link to="/home"><Button>Acessar</Button></Link>
                     <p>Ainda não possui conta? <b><Link to="/register">Cadastre-se</Link></b></p>
                 </form>
-            </RightContent>
-            
+            </RightContent>s
         </ContainerLogin>
     )
 }
