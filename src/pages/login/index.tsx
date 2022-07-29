@@ -25,8 +25,7 @@ export default function Login() {
                     <Link to="/home"><Button>Acessar</Button></Link>
                     <p>Ainda não possui conta? <b><Link to="/register">Cadastre-se</Link></b></p>
                 </form>
-            </RightContent>
-            
+            </RightContent>s
         </ContainerLogin>
     )
 }
