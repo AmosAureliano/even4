@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { 
     ContainerLogin,
     LeftContent,
@@ -8,9 +7,9 @@ import {
     Button
 } from './styles';
 
-export default function Login() {
+export default function Register() {
 
-    function handleSubmit(){}
+    function handleCreateUser(){}
 
     return(
         <ContainerLogin>
@@ -18,12 +17,12 @@ export default function Login() {
             </LeftContent>
 
             <RightContent>
-                <form onSubmit={handleSubmit}>
-                    <TitleLogin>Entre e vá a um evento :)!</TitleLogin>
+                <form onSubmit={handleCreateUser}>
+                    <TitleLogin>Tenha acesso rápido aos melhores eventos :)!</TitleLogin>
                     <Input type="email" placeholder="Email"/>
                     <Input type="password" placeholder="Senha"/>
+
                     <Button>Acessar</Button>
-                    <p>Ainda não possui conta? <b><Link to="/register">Cadastre-se</Link></b></p>
                 </form>
             </RightContent>
             
