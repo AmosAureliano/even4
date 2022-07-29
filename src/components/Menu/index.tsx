@@ -21,7 +21,7 @@ function Menu() {
       <Navigation clicked={click}>
         <List>
           <li>
-            <ItemLink onClick={handleClick} to="/">
+            <ItemLink onClick={handleClick} to="/home">
               Home
             </ItemLink>
           </li>
@@ -31,7 +31,7 @@ function Menu() {
             </ItemLink>
           </li>
           <li>
-            <ItemLink onClick={handleClick} to="/portfolio">
+            <ItemLink onClick={handleClick} to="/profile">
               Perfil
             </ItemLink>
           </li>
