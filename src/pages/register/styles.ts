@@ -40,6 +40,12 @@ export const RightContent = styled.div`
     @media(max-width: 900px) {
         width: 100vw;
         height: 50vh;
+
+        form { 
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
     }
 `
 
@@ -57,6 +63,10 @@ export const Input = styled.input`
     background-color: #f5f5f5;
     min-width: 30vw;
     margin: .5rem 0;
+
+    @media(max-width: 900px) {
+        min-width: 80vw;
+    }
 `
 
 export const Button = styled.button`
@@ -71,8 +81,12 @@ export const Button = styled.button`
     margin: .5rem 0;
     cursor: pointer;
     transition: .3s;
-    
+
     &:hover {
         background-color: #228dff;
+    }
+
+    @media(max-width: 900px) {
+        min-width: 89vw;
     }
 `
