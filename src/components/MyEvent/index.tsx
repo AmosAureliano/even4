@@ -6,7 +6,7 @@ import {
     EventInfoText,
     Button
  } from './styles';
-
+import { saveAs } from "file-saver";
 
 interface EventHomeProps {
     title: string;
@@ -14,6 +14,12 @@ interface EventHomeProps {
     date: string
 }
 export default function EventHome({title, typeEvent, date}  : EventHomeProps) {
+    function saveFile(){
+        saveAs(
+          "../../assets/ingressos.pdf",
+          "ingresso.pdf"
+        );
+    };
     return(
         <EventHomeContainer>
             <GeneralInformations>
@@ -22,7 +28,7 @@ export default function EventHome({title, typeEvent, date}  : EventHomeProps) {
                 <EventInfoText>{date}</EventInfoText>
             </GeneralInformations>
             
-            <Link to="/event"><Button>Baixar</Button></Link>
+            <Button onClick={saveFile}>Baixar</Button>
         </EventHomeContainer>
     )
 }
